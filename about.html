@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<!-- body section-->
+
+<body>
+    <!-- header section  -->
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="./images/logo.png" />
+            </div>
+            <nav class="navbar">
+                <a href="#">HOME</a>
+                <a class="active" href="#">ABOUT</a>
+                <a href="#">CONTANT</a>
+            </nav>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+    <!-- portfolio section -->
+    <section id="home">
+        <div class="banner-section">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1>amelia woods</h1>
+                    <p>i am a graphic & web designer based in New York. Specializing <br> in user interface design and
+                        development
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-count">
+            <div class="count">
+                <div class="count-text">
+                    <i class="fa fa-suitcase"></i>
+                    <div>
+                        <h6>548</h6>
+                        <span>PROJECTS COMPLETED</span>
+                    </div>
+                </div>
+                <div class="count-text">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h6>1465</h6>
+                        <span>WORKING HOURS</span>
+                    </div>
+                </div>
+                <div class="count-text">
+                    <i class="fa-solid fa-star"></i>
+                    <div>
+                        <h6>612</h6>
+                        <span>POSITIVE FEEDBACKS</span>
+                    </div>
+                </div>
+                <div class="count-text">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        <h6>735</h6>
+                        <span>HAPPY CLIENTE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section -->
+    <div class="about">
+        <div class="about-section">
+            <div class="image-part">
+                <img src="./images/bg-image.png" alt="">
+            </div>
+            <div class="content-part">
+                <div class="content-mix">
+                    <h1>about me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eveniet sed adipisci non eius
+                        deserunt! Est eveniet sed adipisci non eius
+                        deserunt!
+                        Voluptate mollitia ex eos quas?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur Est eveniet sed adipisci non eius
+                        deserunt! adipisicing elit. Harum dolorem nulla nam, sapiente ex
+                        enim?</p>
+                    <img src="./images/sign.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact section -->
+    <div class="contact">
+        <div class="contact-section">
+            <h1>need a project</h1>
+            <p>let us know what you're looking for in an agency. we'll take a look and see <br> if this could be the
+                start of
+                something beautiful </p>
+            <a href="" class="btn">LET'S TALK</a>
+        </div>
+
+    </div>
+    <!-- footer section -->
+    <footer>
+        <div class="footer-section">
+            <div>
+                <h2>piroll design,inc</h2>
+                <p>@2017 piroll. all rights reserved. <br> designed by robirurk</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">hello@pirolltheme.com</a></li>
+                    <li><a href="#">+44 987 065 908</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">carreer</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">events</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">legals</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">dribbble</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript link -->
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script>
+
+        let menu = document.querySelector('#menu-btn');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+    </script>
+</body>
+<!-- body section -->
+
+</html>
